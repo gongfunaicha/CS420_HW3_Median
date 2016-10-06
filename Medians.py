@@ -40,7 +40,7 @@ def mediansAux(X, i1, j1, Y, i2, j2):
         return [X[Xmid], Y[Ymid]]
     if (X[Xmid] > Y[Ymid]):
         # median of X is higher than median of Y, remove latter part of X and former part of Y
-        return mediansAux(X, i1, (i1+j1)/2, Y, (i2+j2)/2, j2);
+        return mediansAux(X, i1, (i1+j1)/2, Y, (i2+j2)/2, j2)
     else:
         # median of X is lower than medain of Y, remove the former part of X and latter part of Y
-        return mediansAux(X, (i1+j1)/2, j1, Y, i2, (i2+j2)/2);
+        return mediansAux(X, (i1+j1)/2, j1, Y, i2, (i2+j2)/2)
